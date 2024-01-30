@@ -1,0 +1,14 @@
+{% extends "authentication/base.html" %} 
+
+
+{% block content %}
+<h4><i>welcome {{  user.username }}</i></h4>
+<a href="{% url 'logout_user' %}">logout_user</a><br/>
+<a href="{% url 'get_users' %}">Get Users</a><br/>
+<a href="{% url 'delete_users' %}">Delete Users</a><br/>
+<a href="{% url 'create_message' %}">Create Message</a><br/>
+<a href="{% url 'get_my_message' %}">Get My Messages</a><br/>
+
+
+
+{% endblock content %}

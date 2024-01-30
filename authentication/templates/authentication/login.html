@@ -1,0 +1,12 @@
+{% extends "authentication/base.html" %} 
+
+
+{% block content %}
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" />
+</form>
+<a href="{% url 'create_account' %}">create_account</a>
+
+{% endblock content %}
